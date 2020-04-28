@@ -1,0 +1,25 @@
+package com.algaworks.osworks.api.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.algaworks.osworks.api.model.ComentarioInput;
+import com.algaworks.osworks.api.model.ComentarioModel;
+
+@RestController
+@RequestMapping("/ordens-servico/{ordemServicoId/comentarios}")
+public class ComentarioController {
+	
+	@PostMapping
+	public comentarioModel adicionar(@PathVariable Long ordemServicoId,
+			@Valid @RequestBody ComentarioInput comentarioInput) {
+		
+		
+	}
+
+}
